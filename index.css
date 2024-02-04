@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Sonic Extra Bold";
+  src: url("Fonts/Sonic Extra Bold.otf") format("opentype");
+}
+
+.cfont {
+  font-family: 'Sonic Extra Bold', sans-serif;
+}
+
+
+.navbar {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Add your desired shadow values */
+  background-color: white;
+  margin-left: 15%; 
+  margin-right: 15%; 
+  padding: 15px; 
+  height: 7vh; 
+  min-height: 60px;
+  transition: margin 0.4s linear, background-color 0.01s linear;
+}
+
+
+.navbar.scrolled {
+  background-color: black;
+  margin-left: 0%; 
+  margin-right: 0%; 
+  padding: 15px; 
+  height: 1vh; 
+  min-height: 70px
+}
+
+.header {
+  padding-top: 3rem;
+  padding-bottom: 1.8rem;
+  transition: padding 0.1s linear;
+}
+.header.scrolled {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.underline {
+   text-decoration: none; 
+   position: relative; 
+ }   
+
+.fw-bold.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -4px; 
+   /****** 
+   optional values below 
+   ******/
+    
+    /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 40%;
+  background: rgb(216, 7, 7);
+  
+  /* optional animation */
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+
+.nav-link.underline:after {
+   position: absolute;
+   content: '';
+   height: 1.5px;
+ /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+   bottom: 2px; 
+  /****** 
+  optional values below 
+  ******/
+   
+   /* center - (optional) use with adjusting width   */
+ margin: 0 auto;
+ left: 0;
+ right: 0;
+ width: 35%;
+ background: rgb(216, 7, 7);
+ 
+ /* optional animation */
+ -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+/* optional hover classes used with anmiation */
+.navbar-nav .underline:hover:after {
+  width: 55%;
+}
+
+/* optional hover classes used with anmiation */
+.underline:hover:after {
+  width: 70%;
+}
+
+.header .nav-link,
+.header .navbar-brand,
+.header .navbar-toggler i {
+  color: rgb(0, 0, 0);
+  transition: color 0.2s linear;
+}
+.header.scrolled .nav-link,
+.header.scrolled .navbar-brand,
+.header.scrolled .navbar-toggler i {
+  color: white;
+  transition: color 0.2s linear;
+}
+
+
+.header .nav-link:hover,
+.header .navbar-brand:hover,
+.header .navbar-toggler i:hover {
+  color: rgb(216, 7, 7);
+}
+
+
+.header .navbar-brand {
+  font-size: 2.1rem;
+}
+.header .navbar-toggler {
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  right: 16%;
+}
+.header .navbar-toggler i {
+  font-size: 1.5rem;
+}
+
+
+.offcanvas .fa-close {
+  font-size: 1.8rem;
+}
+.offcanvas.show .row {
+  padding-top: 2rem !important;
+}
+.offcanvas.show .nav-link {
+  color: black;
+}
+
+.cover-image {
+  min-height: 600px;
+  color: white;
+  background: url(Images/two_lalas.png) no-repeat center;
+  background-size: cover;
+}
+.cover-image__title {
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.cover-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 30%);
+}
+
+@media (max-width: 767px) {
+  p.lead {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  [class*=container] {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Styles for small devices (phones) */
+  .navbar {
+    background-color: #046dd6; /* Dark background color */
+    padding: 10px; /* Adjust padding as needed */
+  }
+}
+
+.navbar-nav .nav-item {
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-left: 20px;
+}
+
+
+/* Extend hover area without affecting navbar size */
+.navbar-nav .nav-item {
+  padding: 10px; /* Adjust the padding to expand the hover area */
+}
+
+.navbar.scrolled .nav-item {
+  padding: 15px;
+}
+
+
+/* Style individual sub-menu items */
+.navbar-nav .nav-item .sub-menu .navbar-dropdown-item {
+  padding: 8px 16px;
+  color: #abadb1; /* Optional: Set the text color */
+  display: block;
+  margin: 0; /* Reset margin to remove any default spacing */
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.navbar.scrolled .nav-item .sub-menu .navbar-dropdown-item {
+  padding: 8px 16px;
+  color: #eeeeef; /* Optional: Set the text color */
+  display: block;
+  margin: 0; /* Reset margin to remove any default spacing */
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* Apply left padding only to the first item in the dropdown */
+.navbar-nav .nav-item .sub-menu .navbar-dropdown-item:first-child {
+  padding-left: 40px; /* Adjust the left padding as needed */
+}
+
+
+.navbar.scrolled .nav-item .sub-menu .navbar-dropdown-item:first-child {
+  padding-left: 255px; /* Adjust the left padding as needed */
+}
+
+/* Style the sub-menu */
+.navbar-nav .nav-item .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 100%; /* Set the width to match the navbar width */
+  background-color: #eeeeef; /* Optional: Set the background color */
+  border: 1px solid #ddd; /* Optional: Add a border */
+  padding: 10px; /* Optional: Add padding to the submenu */
+  box-sizing: border-box; /* Ensure box-sizing includes padding */
+ }
+
+ .navbar.scrolled .nav-item .sub-menu {
+  background-color: #1a1a1a; /* Optional: Set the background color */
+  border: 0px; /* Optional: Add a border */
+ }
+
+/* Optional: Style the sub-menu items on hover */
+.navbar-nav .nav-item:hover .sub-menu {
+  display: flex; /* Display the sub-menu when hovering */
+}
+
+.navbar-nav .nav-item .sub-menu .navbar-dropdown-item:hover {
+  color: #000000;
+}
+
+.navbar.scrolled .nav-item .sub-menu .navbar-dropdown-item:hover {
+  color: #ffff;
+}
