@@ -1,5 +1,5 @@
 // Your CSV file URL
-const csvFile = '/DB/Events.csv';
+const csvFile = '../DB/Events.csv';
 
 // Function to fetch and parse CSV data
 function loadCSV() {
