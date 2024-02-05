@@ -175,7 +175,7 @@ createPaginationButtons();
 }
 
 // Fetch CSV data directly from file
-fetch('DB/Fighters.csv')
+fetch('/DB/Fighters.csv')
   .then(response => response.text())
   .then(csvData => {
     // Parse CSV data into an array of objects using PapaParse

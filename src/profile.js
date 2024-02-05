@@ -60,5 +60,5 @@ function displayUserProfile(user) {
 }
 
 // Example usage
-const file_path = 'DB/Fighters.csv'; // Replace with the path to your CSV file
+const file_path = '/DB/Fighters.csv'; // Replace with the path to your CSV file
 parseAndSortCSV(file_path);
