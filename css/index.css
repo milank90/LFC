@@ -153,7 +153,7 @@
 .cover-image {
   min-height: 600px;
   color: white;
-  background: url(/Images/two_lalas.png) no-repeat center;
+  background: url(../Images/two_lalas.png) no-repeat center;
   background-size: cover;
 }
 .cover-image__title {
