@@ -1,11 +1,10 @@
 // Function to create a grid of fighters with pagination
-function createFighterGrid(data, currentPage, itemsPerPage) {
+export function createFighterGrid(data, currentPage, itemsPerPage) {
   const fighterGrid = document.getElementById('fighterGrid');
 
+        
   // Calculate the total number of pages
   const totalPages = Math.ceil(data.length / itemsPerPage);
-  const numPages = 10;
-
 
   // Function to display fighters for a specific page
   function displayFighters(pageNumber) {
@@ -13,14 +12,14 @@ function createFighterGrid(data, currentPage, itemsPerPage) {
 
     const startIndex = (pageNumber - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const fightersToShow = data.slice(startIndex, endIndex);
+    // const fightersToShow = data.slice(startIndex, endIndex);
 
-    fightersToShow.forEach(item => {
+    data.slice(startIndex, endIndex).forEach(item => {
       const fighterCard = document.createElement('div');
       fighterCard.classList.add('fighter-card');
 
-      // Check if the property is 'ImageLink'
-      const imageLink = item['ImageLink'];
+      // Check if the property is 'imng1'
+      const imageLink = item['img1'];
       if (imageLink && imageLink.match(/\.(jpeg|jpg|gif|png)$/) !== null) {
         // If it's an image link, create an img element
         const img = document.createElement('img');
@@ -32,7 +31,7 @@ function createFighterGrid(data, currentPage, itemsPerPage) {
 
       // Display Name
       const nameElement = document.createElement('p');
-      nameElement.textContent = item['Name'];
+      nameElement.textContent = item['name'];
       fighterCard.appendChild(nameElement);
 
       // Create a table with no borders
@@ -41,19 +40,26 @@ function createFighterGrid(data, currentPage, itemsPerPage) {
       const headerRow = table.insertRow(0);
       const valuesRow = table.insertRow(1);
 
-      // Populate headers and corresponding values
-      ['Rank', 'Points', 'Fights'].forEach((header, index) => {
-        const headerCell = headerRow.insertCell(index);
-        headerCell.textContent = header;
-        headerCell.style.border = 'none'; // Remove borders
-        headerCell.style.textAlign = 'center'; // Center the header
-        headerCell.style.paddingBottom = '0px'; // Add padding
+// Define a mapping for property names
+const propertyNameMapping = {
+  'rank': 'Rank',
+  'points': 'Points',
+  'totalfights': 'Fights'
+};
 
-        const valueCell = valuesRow.insertCell(index);
-        valueCell.textContent = item[header];
-        valueCell.style.border = 'none'; // Remove borders
-        valueCell.style.textAlign = 'center'; // Center the value
-        valueCell.style.paddingBottom = '0px'; // Add padding
+// Populate headers and corresponding values
+Object.keys(propertyNameMapping).forEach((propertyName, index) => {
+  const headerCell = headerRow.insertCell(index);
+  headerCell.textContent = propertyNameMapping[propertyName];
+  headerCell.style.border = 'none'; // Remove borders
+  headerCell.style.textAlign = 'center'; // Center the header
+  headerCell.style.paddingBottom = '0px'; // Add padding
+
+  const valueCell = valuesRow.insertCell(index);
+  valueCell.textContent = item[propertyName];
+  valueCell.style.border = 'none'; // Remove borders
+  valueCell.style.textAlign = 'center'; // Center the value
+  valueCell.style.paddingBottom = '0px'; // Add padding
 
         // Add padding only to the middle cell
         if (index === 1) {
@@ -80,7 +86,7 @@ function createFighterGrid(data, currentPage, itemsPerPage) {
 
       // Display "Wins Draws Losses" in the same row under the header "W D L"
       const wdlElement = document.createElement('p');
-      wdlElement.textContent = `${item['Wins']} - ${item['Losses']} - ${item['Draws']}`;
+      wdlElement.textContent = `${item['wins']} - ${item['losses']} - ${item['draws']}`;
       wdlElement.style.marginTop = '0px'; // Adjust margin to minimize space
       wdlElement.style.textAlign = 'center'; // Center the value
       fighterCard.appendChild(wdlElement);
@@ -97,7 +103,7 @@ function createPaginationButtons() {
   [paginationContainerTop, paginationContainerBottom].forEach(paginationContainer => {
     paginationContainer.innerHTML = ''; // Clear existing pagination buttons
 
-    const maxVisiblePages = 7;
+    const maxVisiblePages = 3;
 
     // Calculate start and end page based on current page
     let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
@@ -174,19 +180,3 @@ createPaginationButtons();
   createPaginationButtons();
 }
 
-// Fetch CSV data directly from file
-fetch('../DB/Fighters.csv')
-  .then(response => response.text())
-  .then(csvData => {
-    // Parse CSV data into an array of objects using PapaParse
-    Papa.parse(csvData, {
-      header: true,
-      complete: function (results) {
-        const data = results.data;
-        const currentPage = 1;
-        const itemsPerPage = 15; // Adjust this value based on your preference
-        createFighterGrid(data, currentPage, itemsPerPage);
-      },
-    });
-  })
-  .catch(error => console.error('Error:', error));
