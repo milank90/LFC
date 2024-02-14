@@ -1,0 +1,448 @@
+[debug] [2024-02-12T07:31:05.409Z] ----------------------------------------------------------------------
+[debug] [2024-02-12T07:31:05.414Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Freeware Sys\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-02-12T07:31:05.415Z] CLI Version:   13.2.1
+[debug] [2024-02-12T07:31:05.415Z] Platform:      win32
+[debug] [2024-02-12T07:31:05.416Z] Node Version:  v20.11.0
+[debug] [2024-02-12T07:31:05.416Z] Time:          Mon Feb 12 2024 09:31:05 GMT+0200 (Eastern European Standard Time)
+[debug] [2024-02-12T07:31:05.417Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-12T07:31:05.556Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-12T07:31:05.557Z] > authorizing via signed-in user (milankse90@gmail.com)
+[debug] [2024-02-12T07:31:05.662Z] openjdk version "21.0.2" 2024-01-16 LTS
+
+[debug] [2024-02-12T07:31:05.663Z] OpenJDK Runtime Environment Temurin-21.0.2+13 (build 21.0.2+13-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.2+13 (build 21.0.2+13-LTS, mixed mode, sharing)
+
+[debug] [2024-02-12T07:31:05.681Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: functions, firestore, database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, database"}}
+[debug] [2024-02-12T07:31:05.712Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-12T07:31:05.713Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-12T07:31:05.713Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-12T07:31:05.717Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4002 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4002 instead."}}
+[debug] [2024-02-12T07:31:05.719Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":3000}],"database":[{"address":"127.0.0.1","family":"IPv4","port":3999}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9151}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4002},{"address":"::1","family":"IPv6","port":4002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project lfc-website-31dd4. This may result in unexpected behavior. 
+[debug] [2024-02-12T07:31:05.739Z] [hub] writing locator at C:\Users\FREEWA~1\AppData\Local\Temp\hub-lfc-website-31dd4.json
+[debug] [2024-02-12T07:31:05.762Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-12T07:31:05.762Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-12T07:31:05.763Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":3000}],"database":[{"address":"127.0.0.1","family":"IPv4","port":3999}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9151}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4002},{"address":"::1","family":"IPv6","port":4002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-12T07:31:05.766Z] defaultcredentials: writing to file C:\Users\Freeware Sys\AppData\Roaming\firebase\milankse90_gmail_com_application_default_credentials.json
+[debug] [2024-02-12T07:31:05.767Z] Setting GAC to C:\Users\Freeware Sys\AppData\Roaming\firebase\milankse90_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Freeware Sys\\AppData\\Roaming\\firebase\\milankse90_gmail_com_application_default_credentials.json"}}
+[debug] [2024-02-12T07:31:05.770Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lfc-website-31dd4/adminSdkConfig [none]
+[debug] [2024-02-12T07:31:06.175Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lfc-website-31dd4/adminSdkConfig 200
+[debug] [2024-02-12T07:31:06.175Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lfc-website-31dd4/adminSdkConfig {"projectId":"lfc-website-31dd4","storageBucket":"lfc-website-31dd4.appspot.com"}
+[debug] [2024-02-12T07:31:06.194Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-12T07:31:06.194Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-02-12T07:31:06.194Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Freeware Sys\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.18.2.jar","--host","127.0.0.1","--port",3000,"--websocket_port",9151,"--project_id","lfc-website-31dd4","--rules","E:\\My Work\\Nextjs LFC\\lfc_wb\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Freeware Sys\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.18.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",3000,\"--websocket_port\",9151,\"--project_id\",\"lfc-website-31dd4\",\"--rules\",\"E:\\\\My Work\\\\Nextjs LFC\\\\lfc_wb\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-02-12T07:31:08.200Z] Feb 12, 2024 9:31:08 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9151
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:08 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9151\r\n"}}
+[debug] [2024-02-12T07:31:08.294Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-02-12T07:31:08.294Z] 127.0.0.1:3000
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:3000
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:3000\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:3000\n\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9151. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9151."}}
+[debug] [2024-02-12T07:31:08.556Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lfc-website-31dd4 [none]
+[debug] [2024-02-12T07:31:08.764Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lfc-website-31dd4 200
+[debug] [2024-02-12T07:31:08.764Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lfc-website-31dd4 {"projectId":"lfc-website-31dd4","projectNumber":"1082810451787","displayName":"LFC-Website","name":"projects/lfc-website-31dd4","resources":{"hostingSite":"lfc-website-31dd4"},"state":"ACTIVE","etag":"1_7b4f04a1-32fb-431a-9ef4-cb9fae200c5f"}
+[debug] [2024-02-12T07:31:08.764Z] database rules config:  []
+[warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2024-02-12T07:31:08.766Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-02-12T07:31:08.766Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-12T07:31:08.766Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2024-02-12T07:31:08.767Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Freeware Sys\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.11.2.jar","--host","127.0.0.1","--port",3999,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Freeware Sys\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.11.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",3999,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2024-02-12T07:31:10.819Z] 09:31:10.817 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"09:31:10.817 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\r\n"}}
+[debug] [2024-02-12T07:31:11.160Z] 09:31:11.160 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:3999
+ {"metadata":{"emulator":{"name":"database"},"message":"09:31:11.160 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:3999\r\n"}}
+[debug] [2024-02-12T07:31:11.391Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-12T07:31:11.391Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-12T07:31:11.392Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Freeware Sys\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Freeware Sys\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-12T07:31:11.700Z] Web / API server started at 127.0.0.1:4002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4002\n"}}
+[debug] [2024-02-12T07:31:11.700Z] Web / API server started at ::1:4002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4002\n"}}
+[info] i  functions: Watching "E:\My Work\Nextjs LFC\lfc_wb\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\My Work\\Nextjs LFC\\lfc_wb\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-12T07:31:11.953Z] Validating nodejs source
+[debug] [2024-02-12T07:31:15.466Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-12T07:31:15.467Z] Building nodejs source
+[debug] [2024-02-12T07:31:15.467Z] Failed to find version of module node: reached end of search path E:\My Work\Nextjs LFC\lfc_wb\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-02-12T07:31:15.472Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-12T07:31:15.494Z] Found firebase-functions binary at 'E:\My Work\Nextjs LFC\lfc_wb\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8176
+
+[debug] [2024-02-12T07:31:17.221Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-12T07:31:19.295Z] Feb 12, 2024 9:31:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:19 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:31:19.318Z] Feb 12, 2024 9:31:19 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /fighters
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:19 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /fighters\r\n"}}
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4002/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4002/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:3000 │ http://127.0.0.1:4002/firestore │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Database  │ 127.0.0.1:3999 │ http://127.0.0.1:4002/database  │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9151
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-02-12T07:31:23.986Z] Feb 12, 2024 9:31:23 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /fighters
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:23 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /fighters\r\n"}}
+[debug] [2024-02-12T07:31:48.581Z] Feb 12, 2024 9:31:48 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /fighters
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:48 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /fighters\r\n"}}
+[debug] [2024-02-12T07:31:52.725Z] Feb 12, 2024 9:31:52 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /fighters
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:52 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /fighters\r\n"}}
+[debug] [2024-02-12T07:31:54.583Z] Feb 12, 2024 9:31:54 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /fighters
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:54 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /fighters\r\n"}}
+[debug] [2024-02-12T07:31:55.771Z] Feb 12, 2024 9:31:55 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /fighters
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:31:55 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /fighters\r\n"}}
+[debug] [2024-02-12T07:32:31.131Z] Feb 12, 2024 9:32:31 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:32:31 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:32:31.134Z] Feb 12, 2024 9:32:31 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:32:31 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:32:31.138Z] Feb 12, 2024 9:32:31 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:32:31 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:32:53.330Z] Feb 12, 2024 9:32:53 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:32:53 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:32:53.333Z] Feb 12, 2024 9:32:53 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:32:53 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:32:53.334Z] Feb 12, 2024 9:32:53 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:32:53 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:06.288Z] Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:06.291Z] Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:06.292Z] Feb 12, 2024 9:33:06 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:06 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:06.942Z] Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:06.944Z] Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:06 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:06.946Z] Feb 12, 2024 9:33:06 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:06 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:07.454Z] Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:07.457Z] Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:07.458Z] Feb 12, 2024 9:33:07 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:07 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:07.730Z] Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:07.733Z] Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:07 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:07.735Z] Feb 12, 2024 9:33:07 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:07 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:08.296Z] Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:08.298Z] Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:08.299Z] Feb 12, 2024 9:33:08 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:08 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:08.707Z] Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:08.709Z] Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:08 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:08.710Z] Feb 12, 2024 9:33:08 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:08 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:09.079Z] Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:09.081Z] Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:09.083Z] Feb 12, 2024 9:33:09 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:09.427Z] Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:09.430Z] Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:09.431Z] Feb 12, 2024 9:33:09 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:09.798Z] Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:09.800Z] Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:09.802Z] Feb 12, 2024 9:33:09 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:09 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}
+[debug] [2024-02-12T07:33:14.100Z] Feb 12, 2024 9:33:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:14 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2024-02-12T07:33:14.101Z] Feb 12, 2024 9:33:14 AM io.gapi.emulators.netty.NotFoundHandler handleRequest
+INFO: Unknown request URI: /bad-request
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:14 AM io.gapi.emulators.netty.NotFoundHandler handleRequest\r\nINFO: Unknown request URI: /bad-request\r\n"}}
+[debug] [2024-02-12T07:33:14.103Z] Feb 12, 2024 9:33:14 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException
+WARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Feb 12, 2024 9:33:14 AM io.netty.channel.DefaultChannelPipeline onUnhandledInboundException\r\nWARNING: An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.\r\njava.net.SocketException: Connection reset\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)\r\n\tat java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)\r\n\tat io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)\r\n\tat io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)\r\n\tat io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)\r\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)\r\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)\r\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)\r\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)\r\n\tat io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)\r\n\tat io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\r\n\r\n"}}

@@ -1,0 +1,30 @@
+.fighter-table {
+    margin: 0 auto;
+  }
+  
+  .header-cell {
+    border: none;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  
+  .value-cell {
+    border: none;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  
+  .value-cell:nth-child(2) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .wdl-header {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .wdl-element {
+    margin-top: 0px;
+    text-align: center;
+  }

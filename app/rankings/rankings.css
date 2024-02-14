@@ -1,0 +1,56 @@
+#loadMoreBtn {
+    position: relative;
+    display: block;
+    margin: 0 auto 50px;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    font-size:small
+  }
+  
+  .btn.btn-primary {
+    border: 1px solid #ddd;
+    height: 40px; 
+    min-width: 210px;
+    width: 20%;
+    border-radius: 0px; /* Set the desired border radius */
+  }
+  
+  .btn.btn-primary:hover:before {
+    border-color: black;
+  }
+  
+  #loadMoreBtn:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: rgb(216, 7, 7);
+    width: 100%;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  #loadMoreBtn:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background: rgb(216, 7, 7);
+    width: 0;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  #loadMoreBtn:hover {
+  border-color: rgb(0, 0, 0); /* Set the desired border color on hover */
+  background-color: #ddd;
+  }
+  
+  .centered-text {
+    text-align: center;
+  }
