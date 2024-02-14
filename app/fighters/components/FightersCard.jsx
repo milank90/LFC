@@ -1,47 +1,45 @@
-"use client";
-import React from "react";
-import { useRouter } from "next/navigation";
+import React from 'react';
+import { useRouter } from 'next/navigation';
 
-export default function FightersCard(props) {
+const FightersCard = ({ fighter }) => {
     const router = useRouter();
 
+    const handleClick = () => {
+        router.push(`/fighters/${fighter.name.replace(/\s+/, '.')}`);
+    };
+
+    const propertyNameMapping = {
+        rank: 'Rank',
+        points: 'Points',
+        totalfights: 'Fights',
+    };
+
     return (
-        <div
-            type="button"
-            style={{ height: "50px", border: "1px solid black", cursor: "pointer" }}
-            onClick={() => {
-                router.push(`/fighters/${props.name.replace(/\s+/g, ".")}`);
-            }}
-            className="fighter-card"
-        >
-            {props.img1 && (
-                <img
-                    src={props.img1}
-                    alt="Fighter Image"
-                    className="fighter-image"
-                />
+        <div className="fighter-card" onClick={handleClick}>
+            {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
+                <img src={fighter.img1} alt="Fighter Image" className="fighter-image" />
             )}
-            <p>{props.name}</p>
+            <p>{fighter.name}</p>
+            
+            <table className="fighter-table">
+                <tr>
+                    {Object.keys(propertyNameMapping).map((propertyName) => (
+                        <th key={propertyName}>{propertyNameMapping[propertyName]}</th>
+                    ))}
+                </tr>
+                <tr>
+                    {Object.keys(propertyNameMapping).map((propertyName, index) => (
+                        <td key={index}>{fighter[propertyName]}</td>
+                    ))}
+                </tr>
+            </table>
+
             <div>
-                <div>
-                    <div>Rank</div>
-                    <div>Points</div>
-                    <div>Fights</div>
-                </div>
-                <div>
-                    <div>props.rank</div>
-                    <div>props.points</div>
-                    <div>props.totalfights</div>
-                </div>
-            </div>
-            <div>
-                <div>W {props.wins}</div>
-                <div>
-                    <span> - L - </span>
-                    <span>- {props.losses} -</span>
-                </div>
-                <div>D {props.draws}</div>
+                <p>W - L - D</p>
+                <p>{`${fighter.wins} - ${fighter.losses} - ${fighter.draws}`}</p>
             </div>
         </div>
     );
-}
+};
+
+export default FightersCard;
