@@ -1,4 +1,4 @@
-import FighterGrid from "../components/FighterGrid/FighterGrid";
+import FightersGrid from "./components/FightersGrid";
 import FighterGridTest from "../components/FighterGrid/FighterGridTest";
 import "./fighters.css";
 
@@ -7,7 +7,7 @@ export default function Fighters() {
         <main>
             <div>
                 {/* <FighterGridTest /> */}
-                <FighterGrid />
+                <FightersGrid />
             </div>
         </main>
     );

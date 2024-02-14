@@ -5,7 +5,7 @@ import { getDocs, collection } from "firebase/firestore";
 import { db } from "@/app/DBinit";
 import { useRouter } from "next/navigation";
 
-const FighterGrid = () => {
+const FightersGrid = () => {
     const [fighters, setFighters] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 15;
@@ -211,4 +211,4 @@ const FighterGrid = () => {
     );
 };
 
-export default FighterGrid;
+export default FightersGrid;
