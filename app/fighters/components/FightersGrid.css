@@ -1,23 +1,11 @@
-.fighter-table {
-    margin: 0 auto;
-  }
-  
-  .header-cell {
-    border: none;
-    text-align: center;
-    padding-bottom: 0px;
-  }
-  
-  .value-cell {
-    border: none;
-    text-align: center;
-    padding-bottom: 0px;
-  }
-  
-  .value-cell:nth-child(2) {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
+.divider {
+  height: 5px;
+  width: 100%;
+}
+
+.fighter-grid {
+  margin-top: 50px;
+}
   
   .wdl-header {
     margin-top: 15px;
@@ -28,3 +16,20 @@
     margin-top: 0px;
     text-align: center;
   }
+
+
+  .fighter-table {
+    margin: 0 auto;
+  }
+  
+  .fighter-table th, .fighter-table td {
+    border: none;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  
+  .fighter-table td:nth-child(2) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
