@@ -1,0 +1,59 @@
+
+
+.fighter-profile-wrap.background {
+  min-height: 600px;
+  color: white;
+  background-color: #19191e;
+  background-size: cover;
+  padding-top: 200px;
+  
+}
+
+
+.container-lg.fighter-profile-page {
+    display: flex;
+  
+}
+
+.fighter-profile {
+
+  margin-top: 100px;
+}
+
+
+  .fighter-stats {
+    display:flex;
+    margin-left: 0px; /* Adjust as needed */
+
+  }
+  
+  .fighter-stats > div {
+    margin-right: 5px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .fighter-stats p {
+    margin: 0;
+  }
+
+  .fighter-stats-rank {
+  border-right: 2px solid #ffff; /* Adjust color as needed */
+  height: 40%; /* Adjust height as needed */
+
+  }
+
+  .fighter-stats-fights {
+
+    margin-left: 10px;
+  }
+
+
+.wld {
+margin-left: -20px;
+
+}
+
+.wld p {
+  margin: 0;
+  text-align: center;
+}

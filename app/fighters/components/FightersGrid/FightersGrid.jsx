@@ -1,29 +1,34 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import FighterCard from "./FightersCard";
+import FighterCard from "./FightersCard/FightersCard";
 import { getDocs, collection } from "firebase/firestore";
 import { db } from "@/app/DBinit";
 import { useRouter } from "next/navigation";
+import "./FightersGrid.css";
 
 const FightersGrid = () => {
-    const [fighters, setFighters] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 15;
-    const router = useRouter();
-  
-    useEffect(() => {
-      const colRef = collection(db, "Fighters");
-  
-      getDocs(colRef)
-        .then((snapshot) => {
-          const fightersData = snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-          setFighters(fightersData);
-        })
-        .catch((err) => {
-          console.log(err.message);
-        });
-    }, []);
+  const [fighters, setFighters] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 12;
+  const router = useRouter();
+
+  useEffect(() => {
+    const colRef = collection(db, "Fighters");
+
+    getDocs(colRef)
+      .then((snapshot) => {
+        const fightersData = snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+        
+        // Sort fightersData alphabetically by name
+        fightersData.sort((a, b) => a.name.localeCompare(b.name));
+
+        setFighters(fightersData);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
   
     const handleCardClick = (fighterName) => {
       router.push(`/fighters/${fighterName}`);
@@ -95,6 +100,7 @@ const FightersGrid = () => {
     );
   
     return (
+     
       <div className="container c">
         <div className="pagin-cont" style={{ marginTop: "300px" }}>
           {createPaginationButtons()}
@@ -105,6 +111,7 @@ const FightersGrid = () => {
         </div>
         <div className="pagin-cont">{createPaginationButtons()}</div>
       </div>
+    
     );
   };
   

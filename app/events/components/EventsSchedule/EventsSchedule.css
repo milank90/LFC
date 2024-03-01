@@ -1,0 +1,129 @@
+body{margin-top:20px;}
+.event-schedule-area .section-title .title-text {
+    margin-bottom: 50px;
+}
+
+.event-schedule-area .tab-area .nav-tabs {
+    border-bottom: inherit;
+}
+
+.event-schedule-area .tab-area .nav {
+    border-bottom: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.event-schedule-area .tab-area .nav-item {
+    margin-bottom: 75px;
+}
+.event-schedule-area .tab-area .nav-item .nav-link {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    border-radius: inherit;
+    border: inherit;
+    padding: 0px;
+    text-transform: capitalize !important;
+}
+.event-schedule-area .tab-area .nav-item .nav-link.active {
+    color: #4125dd;
+    background-color: transparent;
+}
+
+.event-schedule-area .tab-area .tab-content .table {
+    margin-bottom: 0;
+    width: 80%;
+}
+.event-schedule-area .tab-area .tab-content .table thead td,
+.event-schedule-area .tab-area .tab-content .table thead th {
+    border-bottom-width: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #252525;
+}
+
+
+.event-schedule-area-two ul.custom-tab {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+}
+.event-schedule-area-two ul.custom-tab li {
+    margin-left: 3%;
+    margin-right: 3%;
+    position: relative;
+}
+.event-schedule-area-two ul.custom-tab li a {
+    color: #252525;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 35px 0;
+    position: relative;
+}
+.event-schedule-area-two ul.custom-tab li a:hover:before {
+    width: 100%;
+}
+.event-schedule-area-two ul.custom-tab li a:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background: rgb(216, 7, 7);
+    width: 0;
+    height: 2px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.event-schedule-area-two ul.custom-tab li a.active {
+    color: rgb(216, 7, 7);
+}
+
+.event-schedule-area-two .primary-btn {
+    margin-top: 40px;
+}
+
+.event-schedule-area-two .tab-content .table + .table{
+    margin-top: 20px; /* Adjust the value as needed for the desired spacing */
+}
+
+.event-schedule-area-two .tab-content .table {
+    margin-bottom: 20px; /* Adjust the value as needed for the desired spacing */
+    
+}
+
+.event-date {
+    color: #252525;
+    text-align: center;
+ 
+}
+.event-date span {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: normal;
+}
+
+
+
+.event-schedule-area-two .tab-content .table tbody tr td .event-img img {
+    width: 450px;
+    height: 150px;
+    border-radius: 8px;
+    
+}
+
+.event-wrap p {
+
+    margin-bottom: 0px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
-import "./FightersGrid.css";
+import "./FightersCard.css";
+import Image from "next/image";
 
 const FighterCard = ({ fighter, onCardClick }) => {
   const handleCardClick = () => {
@@ -7,11 +8,22 @@ const FighterCard = ({ fighter, onCardClick }) => {
   };
 
   return (
-    <div className="fighter-card" onClick={handleCardClick}>
-      {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
+    
+<button className="fighter-card" onClick={handleCardClick}>
+
+  <div className="front">
+      {/* {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
         <img src={fighter.img1} alt="Fighter Image" className="fighter-image" />
-      )}
-      <p>{fighter.name}</p>
+      )} */}
+        {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
+        <div className="fighter-image">
+          <Image src={fighter.img1} alt="fighter.img1" layout="responsive" width={"250"} height={"250"} />
+        </div>
+        )}
+
+
+      <p className="fighter-nickname">"{fighter.nickname}"</p> 
+      <p className="fighter-name">{fighter.name}</p>
       <table className="fighter-table">
         <thead>
           <tr>
@@ -30,7 +42,8 @@ const FighterCard = ({ fighter, onCardClick }) => {
       </table>
       <p className="wdl-header">W - L - D</p>
       <p className="wdl-element">{`${fighter.wins} - ${fighter.losses} - ${fighter.draws}`}</p>
-    </div>
+      </div>
+    </button>
   );
 };
 

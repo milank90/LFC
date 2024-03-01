@@ -1,10 +1,10 @@
-import EventSchedule from "../components/EventsCalender/EventsCalendar"
+import EventsSchedule from "./components/EventsSchedule/EventsSchedule"
 export default function Events() {
     return (
       <main>
         <div>
-      <EventSchedule />
-      {/* Your other components or JSX go here */}
+      <EventsSchedule />
+      
     </div>
        
       </main>

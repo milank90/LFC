@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { db } from "@/app/DBinit";
 import { useRouter } from "next/navigation";
-import FightersCard from "../../fighters/components/FightersCard";
+import FightersCard from "../../fighters/components/FightersGrid/FightersCard/FightersCard";
 import { collection, getDocs } from "firebase/firestore";
 
 

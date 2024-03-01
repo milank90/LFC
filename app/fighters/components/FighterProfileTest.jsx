@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { getDocs, collection } from "firebase/firestore";
 import { db, collection } from "@/app/DBinit";
 
 const FighterProfile = ({ fighterProfile }) => {

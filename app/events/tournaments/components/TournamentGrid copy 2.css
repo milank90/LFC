@@ -1,0 +1,38 @@
+/* TournamentGrid.css */
+.tournament-container {
+  display: flex;
+  flex-direction: column; /* Adjusted to vertical layout */
+  align-items: center; /* Centering content horizontally */
+  margin: 0 auto;
+}
+
+.round {
+  display: flex;
+  flex-direction: row; /* Adjusted to horizontal layout */
+  align-items: center; /* Centering content vertically */
+  justify-content: space-evenly; /* Distribute space evenly between participants */
+  width: 100%; /* Ensure the round takes full width */
+}
+
+.match {
+  display: flex;
+  flex-direction: row; /* Adjusted to horizontal layout for matches */
+  align-items: center;
+}
+
+.participant {
+  margin-right: 20px; /* Add margin to separate participants */
+}
+
+.match-participants {
+  display: flex;
+}
+
+
+.connector-horizontal {
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
