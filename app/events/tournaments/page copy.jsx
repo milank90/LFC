@@ -1,5 +1,5 @@
 import React from 'react';
-import TournamentGrid from './components/TournamentGrid';
+import TournamentWBracket from './components/TournamentWBracket';
 
 const TournamentPage = () => {
   const participants = [
@@ -12,7 +12,7 @@ const TournamentPage = () => {
   return (
     <div className="container mt-5"> {/* Added Bootstrap container and margin top */}
       <h1 className="text-center mb-4">Tournament Grid</h1>
-      <TournamentGrid participants={participants} />
+      <TournamentWBracket participants={participants} />
     </div>
   );
 };
