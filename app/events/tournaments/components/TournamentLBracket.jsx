@@ -40,16 +40,16 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
             <div className="col-md-12 f_lfight-border"></div>
           </div>
           <div className='col-md-3 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround4fighters, 0)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround4fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround4fighters, 0)).name || 'Undecided'}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround4fighters, 0)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround4fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround4fighters, 0)).name || 'Undecided'}</p>
             </Link>
           </div>
           <p className='vs'>VS</p>
           <div className='col-md-3 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround4fighters, 1)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround4fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround4fighters, 1)).name || 'Undecided'}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround4fighters, 1)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround4fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround4fighters, 1)).name || 'Undecided'}</p>
             </Link>
           </div>
         </div>
@@ -71,17 +71,17 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
           </div>
           {/* Fighter 1 */}
           <div className='col-md-2 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround3fighters, 0)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround3fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround3fighters, 0)).name || 'Undecided'}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround3fighters, 0)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround3fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround3fighters, 0)).name || 'Undecided'}</p>
             </Link>
           </div>
           <p className='col-md-5 vs'>VS</p>
           {/* Fighter 2 */}
           <div className='col-md-2 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround3fighters, 1)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround3fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround3fighters, 1)).name || 'Undecided'}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround3fighters, 1)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround3fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround3fighters, 1)).name || 'Undecided'}</p>
             </Link>
           </div>
         </div>
@@ -102,16 +102,16 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
           </div>
           
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 0)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 0)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 0)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 0)).name || `Undecided`}</p>
             </Link>
           </div>
           <p className='col-md-2 vs'>VS</p>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 1)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 1)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 1)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 1)).name || `Undecided`}</p>
             </Link>
           </div>
         </div>
@@ -124,16 +124,16 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
             <div className="col-md-12 lfight-border"></div>
           </div>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 2)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 2)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 2)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 2)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 2)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 2)).name || `Undecided`}</p>
             </Link>
           </div>
           <p className='col-md-2 vs'>VS</p>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 3)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 3)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround2fighters, 3)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 3)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 3)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround2fighters, 3)).name || `Undecided`}</p>
             </Link>
           </div>
         </div>
@@ -154,16 +154,16 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
             <div className="col-12 lfight-border"></div>
           </div>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 0)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 0)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 0)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 0)).name || `Undecided`}</p>
             </Link>
           </div>
           <p className='col-md-2 vs'>VS</p>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 1)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 1)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 1)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 1)).name || `Undecided`}</p>
             </Link>
           </div>
         </div>
@@ -175,16 +175,16 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
             <div className="col-md-12 lfight-border"></div>
           </div>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 2)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 2)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 2)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 2)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 2)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 2)).name || `Undecided`}</p>
             </Link>
           </div>
           <p className='col-md-2 vs'>VS</p>
           <div className='col-md-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 3)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 3)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_lround1fighters, 3)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 3)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 3)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.lround1fighters, 3)).name || `Undecided`}</p>
             </Link>
           </div>
         </div>

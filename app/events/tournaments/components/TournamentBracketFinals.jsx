@@ -34,9 +34,9 @@ const TournamentBracketFinals = ({ participants, tournamentData }) => {
         <div className='col-md-4 col-12 d-flex text-center justify-content-center flex-wrap finals-match'>
         <div className='col-md-12 col-5 d-flex justify-content-center'>
           <div className='col-md-5 col-12 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_finals, 0)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_finals, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_finals, 0)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_finals, 0)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_finals, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_finals, 0)).name || `Undecided`}</p>
             </Link>
           </div>
           </div>
@@ -48,17 +48,17 @@ const TournamentBracketFinals = ({ participants, tournamentData }) => {
             <div className="col-md-12 f_fight-border"></div>
           </div>
           <div className='col-5 fighter'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_finals, 1)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_finals, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_finals, 1)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_finals, 1)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_finals, 1)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_finals, 1)).name || `Undecided`}</p>
             </Link>
           </div>
         </div>
         <div className='d-flex text-center align-items-center justify-content-center bracket-winner'>
           <div className='col-10 winner'>
-            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_winner, 0)).name || '').replace(/\s/g, '.')}`}>
-              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_winner, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
-              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.a_bracket_winner, 0)).name || `Undecided`}</p>
+            <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_winner, 0)).name || '').replace(/\s/g, '.')}`}>
+              <Image src={getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_winner, 0)).img1 || '/Img/Blank-Profile-image-1.jpg'} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <p>{getParticipantInfo(getFighterIdAtPosition(tournamentData.bracket_winner, 0)).name || `Undecided`}</p>
             </Link>
           </div>
         </div>
