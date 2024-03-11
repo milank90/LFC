@@ -243,7 +243,7 @@ const AddTournamentFightForm = () => {
        
 
         <button type="submit">Submit</button>
-        <button type="button" onClick={handleAddTestFightersClick}>Add Test Fighters</button>
+       
         <button type="button" onClick={handleDeleteAllClick}>Delete All</button>
         
       </form>

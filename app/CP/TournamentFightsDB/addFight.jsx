@@ -1,6 +1,6 @@
 'use client'
-import { useState, useEffect } from 'react';
-import { addDoc, collection, deleteAllDocuments, deleteDoc, getDocs } from 'firebase/firestore';
+import { useState } from 'react';
+import { addDoc, collection, deleteDoc, getDocs } from 'firebase/firestore';
 import { db } from '@/app/DBinit';
 
 
@@ -177,51 +177,6 @@ const AddLeagueFightForm = () => {
   };
 
   
-const handleAddTestFightersClick = async () => {
-  // Generate and add 50 test fighters
-  // const fightersCollection = collection(db, 'Fighters');
-
-  const batch = [];
-  for (let i = 1; i <= 50; i++) {
-    const now = new Date();
-    const gmtPlusTwoOffset = 2 * 60 * 60 * 1000;
-    const localDate = new Date(now.getTime() + now.getTimezoneOffset() * 60 * 1000 + gmtPlusTwoOffset);
-    const dateTime = formatDateTime(localDate);
-    const recalculatedDate = dateTime.formattedDate;
-    const recalculatedTime = dateTime.formattedTime;
-
-    const testFighter = {
-      regdate: recalculatedDate,
-      regtime: recalculatedTime,
-      name: `Test Fighter${i}`,
-      nickname: `Hoi${i}`,
-      img1: '/Img/Blank-Profile-image-1.jpg',
-      img2: '/Img/Blank-Profile-image-1.jpg',
-      img3: '/Img/Blank-Profile-image-1.jpg',
-      datacenter: 'Crystal',
-      world: 'Mateus',
-      rank: i,
-      points: 100 + i,
-      totalfights: 10 + i,
-      wins: 5 + i,
-      losses: 4,
-      draws: 1,
-      winsT: 0,
-      lossesT: 0,
-      ...generateJobEntries(),
-    };
-
-    batch.push(testFighter);
-  }
-
-  try {
-    await Promise.all(batch.map((fighter) => addDoc(fightersCollection, fighter)));
-    console.log('Test fighters added to the database.');
-  } catch (error) {
-    console.error('Error adding test fighters:', error);
-  }
-};
-
   return (
     <div style={{ marginTop: '300px' }}>
       <h1>Add Fight to DB</h1>
@@ -282,7 +237,7 @@ const handleAddTestFightersClick = async () => {
        
 
         <button type="submit">Submit</button>
-        <button type="button" onClick={handleAddTestFightersClick}>Add Test Fighters</button>
+    
         <button type="button" onClick={handleDeleteAllClick}>Delete All</button>
         
       </form>
