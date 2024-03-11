@@ -57,7 +57,7 @@ export default function Navbar() {
         >
           <div className="col-12">
             <div className="row flex-grow-1 p-4 p-lg-0">
-              <div className="d-flex d-lg-block col-lg-2 order-1 order-lg-2 text-lg-center">
+              <div className="col-2 d-flex d-lg-block  order-1 order-lg-2 text-lg-center">
                 <button
                   type="button"
                   className="d-lg-none border-0 bg-transparent p-0 ms-auto"
@@ -73,8 +73,8 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              <div className="col-lg-5 order-2 order-lg-1 ms-auto ms-lg-0">
-                <ul className="navbar-nav d-flex flex-column flex-lg-row">
+              <div className="col-5 order-2 order-lg-1 ms-auto ms-lg-0">
+                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-start left">
                   {menuButtonsL.map((button) => (
                     <li className="nav-item" key={button.title}>
                       <Link className={`nav-link ${router === "/" + button.title ? 'underline' : ''}`} href={`/${button.title}`}>{button.title}</Link>
@@ -90,8 +90,8 @@ export default function Navbar() {
                 </ul>
               </div>
 
-              <div className="col-lg-5 order-3">
-                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end">
+              <div className="col-5 order-3">
+                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end right">
                   {menuButtonsR.map((button) => (
                     <li className="nav-item" key={button.title}>
                       <Link className={`nav-link ${router === "/" + button.title ? 'underline' : ''}`} href={`/${button.title}`}>{button.title}</Link>

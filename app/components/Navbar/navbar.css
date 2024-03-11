@@ -177,13 +177,21 @@
   margin-top: 1%;
   font-weight: bold;
   font-size: 0.9rem;
-  margin-left: 20px;
+  
+}
+
+.navbar-nav.left .nav-item {
+  margin-left: 3%;
+}
+
+.navbar-nav.right .nav-item {
+  margin-right: 3%;
 }
 
 
 /* Extend hover area without affecting navbar size */
 .navbar-nav .nav-item {
-  padding: 10px; /* Adjust the padding to expand the hover area */
+  padding: 2%; /* Adjust the padding to expand the hover area */
 }
 
 .navbar.scrolled .nav-item {
