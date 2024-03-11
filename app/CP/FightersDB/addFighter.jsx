@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { addDoc, collection, deleteAllDocuments, deleteDoc, getDocs } from 'firebase/firestore';
 import { db } from '@/app/DBinit';
 
