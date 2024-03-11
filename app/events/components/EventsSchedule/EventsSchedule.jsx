@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import EventsTab from './EventsTab';
-import EventInfo from './EventCard';
+import EventInfo from './EventCard'
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/app/DBinit';
 import { createRoot } from 'react-dom/client';
@@ -105,7 +105,34 @@ const EventsSchedule = () => {
   
     // Create table for each event
     const rows = data.map((item, index) => (
-      <EventTableRow key={index} dateParts={item.event_date.split('/')} item={item} />
+      <tr key={index}>
+        {/* Adjust the structure based on your data */}
+        <th scope="row">
+          <div className="event-date">
+            <span>{item.event_date}</span>
+            <p>{getMonth(parseInt(item.event_date.split('/')[1]) - 1)}</p>
+          </div>
+        </th>
+        <td>
+          <div className="event-img" style={{ textAlign: 'center' }}>
+            <img src={item.image_link} alt="" />
+          </div>
+        </td>
+        <td>
+          <div className="event-wrap">
+            <h3><a href="#">{item.event_name}</a></h3>
+            <div className="meta">
+              <div className="time">
+                <span>{item.time}</span>
+              </div>
+              <div className="information">
+                <p>{item.information}</p>
+              </div>
+            </div>
+          </div>
+        </td>
+        {/* Add more columns as needed */}
+      </tr>
     ));
   
     const table = (

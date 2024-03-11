@@ -127,7 +127,10 @@ const EventSchedule = () => {
   };
 
   useEffect(() => {
-    populateTabs(eventsData);
+    setEventsData(prevData => {
+      populateTabs(prevData);
+      return prevData;
+    });
   }, [eventsData]);
 
   return (
