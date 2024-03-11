@@ -7,7 +7,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/app/DBinit';
 import { createRoot } from 'react-dom/client';
 import './EventsSchedule.css';
-import { useRouter } from 'next/navigation';
+
 
 const getMonthYear = (dateString) => {
   if (!dateString) {
