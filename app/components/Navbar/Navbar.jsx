@@ -55,7 +55,7 @@ export default function Navbar() {
           id="navbarOffcanvasLg"
           aria-labelledby="navbarOffcanvasLgLabel"
         >
-          <div className="container-xxl">
+          <div className="col-12">
             <div className="row flex-grow-1 p-4 p-lg-0">
               <div className="d-flex d-lg-block col-lg-2 order-1 order-lg-2 text-lg-center">
                 <button
