@@ -1,5 +1,5 @@
 import React from 'react';
-import TournamentWBracket from './components/TournamentWBracket';
+import TournamentWBracket from '../TournamentWBracket';
 
 const TournamentPage = () => {
   const participants = [

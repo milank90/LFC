@@ -1,25 +1,23 @@
 import React from "react";
 import "./FightersCard.css";
 import Image from "next/image";
+import Link from "next/link";
 
-const FighterCard = ({ fighter, onCardClick }) => {
-  const handleCardClick = () => {
-    onCardClick(fighter.name.replace(/\s+/, "."));
-  };
+const FighterCard = ({ fighter }) => {
+
 
   return (
     
-<button className="fighter-card" onClick={handleCardClick}>
+<Link href={`/fighters/${fighter.name.replace(/\s+/, ".")}`} className="fighter-card text-decoration-none text-dark">
 
   <div className="front">
-      {/* {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
-        <img src={fighter.img1} alt="Fighter Image" className="fighter-image" />
-      )} */}
-        {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
-        <div className="fighter-image">
-          <Image src={fighter.img1} alt="fighter.img1" layout="responsive" width={"250"} height={"250"} />
-        </div>
-        )}
+    <div className="fighter-image">
+      {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
+        
+        <Image src={fighter.img1} alt="fighter.img1" layout="responsive" width={"1000"} height={"1000"} />
+        
+      )}
+    </div>
 
 
       <p className="fighter-nickname">"{fighter.nickname}"</p> 
@@ -43,7 +41,7 @@ const FighterCard = ({ fighter, onCardClick }) => {
       <p className="wdl-header">W - L - D</p>
       <p className="wdl-element">{`${fighter.wins} - ${fighter.losses} - ${fighter.draws}`}</p>
       </div>
-    </button>
+    </Link>
   );
 };
 
