@@ -76,7 +76,7 @@ const TournamentPage = () => {
 
   return (
     <div className='tournament d-flex justify-content-center flex-wrap' style={{ marginTop: '150px' }}>
-      <h1 className="col-12 Header text-center mb-4">{tournamentData .name}</h1>
+      <h1 className="col-12 Header text-center mb-4">{tournamentData.name}</h1>
       <div className="col-12 bracket-tabs d-flex justify-content-center">
       {brackets
   .sort() // Sort the brackets alphabetically
@@ -86,12 +86,12 @@ const TournamentPage = () => {
       onClick={() => handleBracketChange(bracket.toLowerCase())}
       className={`tab-button ${selectedBracket === bracket.toLowerCase() ? 'active' : ''}`}
     >
-      BRACKET "{bracket}"
+      BRACKET &quot;{bracket}&quot;
     </button>
   ))}
         
       </div>
-       <h3 className="col-12 Header text-center mb-4">BRACKET "{selectedBracket.toUpperCase()}"</h3>
+       <h3 className="col-12 Header text-center mb-4">BRACKET &quot;{selectedBracket.toUpperCase()}&quot;</h3>
       <TournamentGrid
         selectedBracket={selectedBracket}
         brackets={brackets}
