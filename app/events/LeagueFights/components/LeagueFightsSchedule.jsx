@@ -45,91 +45,81 @@ const LeagueFightsSchedule = () => {
     fetchFirestoreData();
   }, []);
 
+  const getMonthYear = (dateString) => {
+    if (!dateString) {
+      return '';
+    }
+    const [day, month, year] = dateString.split('/');
+    return `${getMonth(parseInt(month) - 1)} ${year}`;
+  };
 
+  const getMonthAbbreviation = (monthYear) => {
+    return monthYear.split(' ')[0].slice(0, 3);
+  };
+
+  const getMonth = (monthIndex) => {
+    const months = [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+    return months[monthIndex];
+  };
+
+  const LeagueFightsTab = ({ index, isActive, monthYear, getMonthAbbreviation }) => (
+    <a
+      className={`nav-link${isActive ? ' active' : ''}`}
+      id={`month${index + 1}-tab`}
+      data-bs-toggle="pill"
+      href={`#month${index + 1}`}
+      role="tab"
+      aria-controls={`month${index + 1}`}
+      aria-selected={isActive}
+    >
+      {getMonthAbbreviation(monthYear)}
+    </a>
+  );
 
   const populateTabs = (data) => {
-    const tabContainer = window.document.getElementById('myTab');
-    const tabContentContainer = window.document.getElementById('leaguefightsTabContent');
     const uniqueMonthYears = [...new Set(data.map(item => getMonthYear(item.leaguefight_date)))];
-  
-    // Clear existing content in the tab container and tab content container
-    tabContainer.innerHTML = '';
-    tabContentContainer.innerHTML = '';
-  
-    // Create tabs and corresponding tab content for each unique month/year
-    uniqueMonthYears.slice(0, 5).forEach((monthYear, index) => {
-      const tabId = `month${index + 1}`;
-      const tabLinkId = `month${index + 1}-tab`;
-  
-      // Create li element
-      const li = document.createElement('li');
-      li.className = 'nav-item';
-  
-      // Use React JSX to render EventsTab component using createRoot
-      const leaguefightsTabRoot = createRoot(li);
-      leaguefightsTabRoot.render(
-        <LeagueFightsTab
-          index={index}
-          isActive={index === 0}
-          monthYear={monthYear}
-          getMonthAbbreviation={getMonthAbbreviation}
-        />
-      );
-  
-      // Append the li element to the tab container
-      tabContainer.appendChild(li);
-  
-      // Create tab content
-      const tabPane = document.createElement('div');
-      tabPane.className = `tab-pane fade${index === 0 ? ' active show' : ''}`;
-      tabPane.id = tabId;
-      tabPane.role = 'tabpanel';
-      tabPane.setAttribute('aria-labelledby', tabLinkId);
-  
-      // Append the tab content to the container
-      tabContentContainer.appendChild(tabPane);
-  
-      // Use React JSX to render EventInfo component using createRoot
-      const eventInfoRoot = createRoot(tabPane);
-      eventInfoRoot.render(
-        <LeagueFightCard data={data.filter(item => getMonthYear(item.leaguefight_date) === monthYear)} />
-      );
-    });
-  };
 
-
-  
-  const populateTable = (data, container) => {
-    const tableContainer = document.createElement('div');
-    tableContainer.className = 'table-responsive';
-  
-    // Create table for each event
-    const rows = data.map((item, index) => (
-      <EventTableRow key={index} dateParts={item.leaguefight_date.split('/')} item={item} />
-    ));
-  
-    const table = (
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col" colSpan="3">{data[0]['leaguefight_name']}</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
+    return (
+      <div>
+        <ul className="nav custom-tab" id="myTab" role="tablist">
+          {uniqueMonthYears.slice(0, 5).map((monthYear, index) => (
+            <li key={index} className={`nav-item${index === 0 ? ' active' : ''}`}>
+              <LeagueFightsTab
+                index={index}
+                isActive={index === 0}
+                monthYear={monthYear}
+                getMonthAbbreviation={getMonthAbbreviation}
+              />
+            </li>
+          ))}
+        </ul>
+        <div className="tab-content" id="leaguefightsTabContent">
+          {uniqueMonthYears.slice(0, 5).map((monthYear, index) => (
+            <div
+              key={index}
+              className={`tab-pane fade${index === 0 ? ' active show' : ''}`}
+              id={`month${index + 1}`}
+              role="tabpanel"
+              aria-labelledby={`month${index + 1}-tab`}
+            >
+              {data.filter(item => getMonthYear(item.leaguefight_date) === monthYear).map((item, rowIndex) => (
+                <EventTableRow key={rowIndex} dateParts={item.leaguefight_date.split('/')} item={item} />
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
     );
-  
-    tableContainer.appendChild(table);
-  
-    // Append the table to the specified container
-    container.appendChild(tableContainer);
   };
 
-
-
-  useEffect(() => {
-    populateTabs(leaguefightsData);
-  }, [leaguefightsData]);
+  const EventTableRow = ({ dateParts, item }) => (
+    <tr>
+      {/* Customize as needed */}
+    </tr>
+  );
 
   return (
     <div className="event-schedule-area-two bg-color pad100" style={{ marginTop: '200px' }}>
@@ -148,17 +138,12 @@ const LeagueFightsSchedule = () => {
           </div>
         </div>
         <div className="col-10 mx-auto">
-          <ul className="nav custom-tab" id="myTab" role="tablist">
-            {/* Dynamically generated tabs will be placed here */}
-          </ul>
-          <div className="tab-content" id="leaguefightsTabContent">
-            {/* Dynamically generated tab content will be placed here */}
-          </div>
+          {populateTabs(leaguefightsData)}
         </div>
       </div>
     </div>
   );
 };
 
-export {getMonth};
+export { getMonth };
 export default LeagueFightsSchedule;
