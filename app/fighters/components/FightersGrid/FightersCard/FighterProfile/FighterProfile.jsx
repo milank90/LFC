@@ -66,7 +66,7 @@ const FighterProfile = ({ fighterName }) => {
                     <div className="col-md-3 col-12 fighter-profile order-2 order-lg-1">
                         <div className="fighter-info">
                             <p>
-                                <strong>'{profile.nickname}'</strong>
+                                <strong>&apos;{profile.nickname}&apos;</strong>
                             </p>
                             <p style={{fontSize: '30px', textTransform: 'uppercase', overflowWrap: 'break-word'}}>
                                 <strong>{profile.name}</strong>
