@@ -101,7 +101,7 @@ const FightersGrid = () => {
   
     return (
      
-      <div className="container c">
+      <div className="container-xxl c">
         <div className="pagin-cont" style={{ marginTop: "300px" }}>
           {createPaginationButtons()}
         </div>
