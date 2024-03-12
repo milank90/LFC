@@ -62,7 +62,7 @@ const FighterProfile = ({ fighterName }) => {
     return (
         <div className="fighter-profile-wrap w-100 vh-70 align-items-center justify-content-center mb-0 background">
             <div className="container-lg mx-auto fighter-profile-page">
-                <div className="d-flex flex-column flex-md-row">
+                <div className="col-12 d-flex flex-column flex-md-row">
                     <div className="col-md-3 col-12 fighter-profile order-2 order-lg-1">
                         <div className="fighter-info">
                             <p>
@@ -112,20 +112,14 @@ const FighterProfile = ({ fighterName }) => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-md-6 col-12 order-1 order-lg-2">
-                        {/* <img
+                    <div className="col-md-6 col-12 order-1 order-lg-2 image">
+                        <img
                         src={profile.img2}
                         alt="Fighter Image"
                         id="profileImage"
-                    /> */}
-                        <Image
-                            src={profile.img2}
-                            alt="Fighter Image"
-                            layout="responsive"
-                            width={1000}
-                            height={2000}
-                        />
+                    />
                     </div>
+                    <div className="col-md-3 order-3"></div>
                 </div>
             </div>
         </div>

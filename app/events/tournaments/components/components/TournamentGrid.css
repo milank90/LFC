@@ -160,20 +160,23 @@
   max-width: 135px;
 }
 
+/*.fighter a {
+  color: inherit; /* Use the default text color */
+  /* text-decoration: none; Remove underline */
+/* }     */
+
 .fighter p {
 margin-bottom: 0px;
 }
 
+.winner img,
 .fighter img {
   
+  width:100%;
   height: auto;  
 }
 
-.bracket-winner .winner img {
 
-  max-width: 235px;
-  height: auto;  
-}
 
 
 
@@ -236,7 +239,8 @@ margin-bottom: 0px;
     .round3 .vs, 
     .lround2 .vs,
     .lround3 .vs,
-    .lround4 .vs {
+    .lround4 .vs,
+    .finals-match .fvs {
     
     width:13%;
     }

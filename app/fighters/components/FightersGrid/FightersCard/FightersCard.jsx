@@ -1,6 +1,5 @@
 import React from "react";
 import "./FightersCard.css";
-import Image from "next/image";
 import Link from "next/link";
 
 const FighterCard = ({ fighter }) => {
@@ -9,7 +8,7 @@ const FighterCard = ({ fighter }) => {
       <div className="front">
         <div className="fighter-image">
           {fighter.img1 && fighter.img1.match(/\.(jpeg|jpg|gif|png)$/) !== null && (
-            <Image src={fighter.img1} alt="fighter.img1" layout="responsive" width={1000} height={1000} />
+            <img src={fighter.img1} alt="fighter.img1"/>
           )}
         </div>
 

@@ -1,0 +1,25 @@
+.tournaments-grid {
+    margin-top: 100px;
+    padding:3%;
+}
+
+.header {
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tournaments-event {
+    
+    padding:3%;
+}
+
+.tournaments-event a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+}    
+
+.tournaments-event img {
+    width: 100%;
+    margin-bottom: 2%;
+}

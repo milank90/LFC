@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import EventsTab from './EventsTab';
 import EventInfo from './EventCard'
 import Link from 'next/link';
-import Image from 'next/image';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '@/app/DBinit';
 import { createRoot } from 'react-dom/client';
@@ -117,7 +116,7 @@ const EventsSchedule = () => {
         </th>
         <td>
           <div className="event-img" style={{ textAlign: 'center' }}>
-            <Image src={item.image_link} alt="" />
+            <img src={item.image_link} alt="" />
           </div>
         </td>
         <td>

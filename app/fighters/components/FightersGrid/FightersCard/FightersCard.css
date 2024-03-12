@@ -17,6 +17,12 @@
     border-bottom: 1px solid #ccc; /* Add a border (dividing line) below the image */
 }
 
+.fighter-image img {
+    width:100%;
+    height: auto;
+}
+
+
 .fighter-name {
 font-weight: bold;
 margin-top: 0px;

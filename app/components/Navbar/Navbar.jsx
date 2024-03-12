@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { usePathname } from "next/navigation";
 
 const menuButtonsL = [
-  { title: "events", subMenu: ["Sub1", "Sub2"] },
+  { title: "events", subMenu: ["calendar", "tournaments", "fights"] },
   { title: "rankings", subMenu: ["Sub1", "Sub2"] },
   { title: "fighters", subMenu: [] },
   { title: "news", subMenu: ["Sub1", "Sub2"] }
@@ -75,18 +75,29 @@ export default function Navbar() {
 
               <div className="col-5 order-2 order-lg-1 ms-auto ms-lg-0">
                 <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-start left">
-                  {menuButtonsL.map((button) => (
-                    <li className="nav-item" key={button.title}>
-                      <Link className={`nav-link ${router === "/" + button.title ? 'underline' : ''}`} href={`/${button.title}`}>{button.title}</Link>
-                      {button.subMenu.length > 0 && (
-                        <div className="sub-menu">
-                          {button.subMenu.map((item) => (
-                            <Link key={item} className="navbar-dropdown-item" href={`/${button.title}/${item}`}>{item}</Link>
-                          ))}
-                        </div>
-                      )}
-                    </li>
-                  ))}
+                {menuButtonsL.map((button) => (
+  <li className="nav-item" key={button.title}>
+    <Link className={`nav-link ${router === "/" + button.title ? 'underline' : ''}`} href={`/${button.title}`}>{button.title}</Link>
+    {button.title === "events" && button.subMenu.length > 0 && (
+      <div className="sub-menu">
+        {button.subMenu.map((item) => (
+          <Link key={item} className="navbar-dropdown-item" href={item.toLowerCase() === "calendar" ? "/events" : `/${button.title}/${item.toLowerCase()}`}>
+            {item}
+          </Link>
+        ))}
+      </div>
+    )}
+    {button.title !== "events" && button.subMenu.length > 0 && (
+      <div className="sub-menu">
+        {button.subMenu.map((item) => (
+          <Link key={item} className="navbar-dropdown-item" href={`/${button.title}/${item.toLowerCase()}`}>
+            {item}
+          </Link>
+        ))}
+      </div>
+    )}
+  </li>
+))}
                 </ul>
               </div>
 

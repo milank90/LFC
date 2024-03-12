@@ -1,7 +1,7 @@
 import React from 'react';
 import { getMonth } from './LeagueFightsSchedule';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 const LeagueFightCard = ({ data }) => {
 
@@ -20,7 +20,7 @@ const LeagueFightCard = ({ data }) => {
               <strong><p>{getMonth(parseInt(item?.leaguefight_date?.split('/')[1]) - 1) || ''}</p></strong>
             </div>
             <div className="col-md-6 col-12 order-3 event-img" style={{ textAlign: 'center' }}>
-              <Image src={item?.leaguefight_img || ''} alt="Event Image" layout="responsive" width={1000} height={2000} />
+              <img src={item?.leaguefight_img || ''} alt="Event Image" style={{width: '100%'}}  />
             </div>
             <div className="col-md-5 col-12 order-4 event-wrap">
               <h5><p>{item?.leaguefight_datacenter || ''}/{item?.leaguefight_world || ''}</p></h5>

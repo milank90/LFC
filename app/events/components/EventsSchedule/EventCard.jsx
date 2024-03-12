@@ -1,7 +1,7 @@
 import React from 'react';
 import { getMonth } from './EventsSchedule';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 const EventInfo = ({ data }) => {
 
@@ -24,7 +24,7 @@ const EventInfo = ({ data }) => {
                    
                   </div>
                   <div className="col-md-6 col-12 order-3 event-img" style={{ textAlign: 'center' }}>
-                    <Image src={item.event_img || ''} alt="Event Image" layout="responsive" width={1000} height={2000}  />
+                    <img src={item.event_img || ''} alt="Event Image" style={{width: '100%'}}  />
                   </div>
                   <div className="col-md-5 col-12 order-4 event-wrap">
                     <h5><p>{item.event_datacenter || ''}/{item.event_world || ''}</p></h5>
