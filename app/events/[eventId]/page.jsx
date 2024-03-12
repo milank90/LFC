@@ -17,7 +17,7 @@ const EventDetailPage = () => {
 
   return (
     <main>
-      <div>
+      <div className='d-flex justify-content-center'>
         {/* Pass eventId to EventDetails component */}
         <EventDetails eventId={eventId} />
       </div>

@@ -4,7 +4,7 @@ import "./fighters.css";
 export default function Fighters() {
     return (
         <main>
-            <div>
+            <div className="d-flex justify-content-center">
                 {/* <FighterGridTest /> */}
                 <FightersGrid />
             </div>
