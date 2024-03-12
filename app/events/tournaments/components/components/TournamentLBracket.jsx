@@ -57,7 +57,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
       </div>
 
       {/* Round 3 */}
-      <div className='col-12 justify-content-center d-flex lround3'>
+      <div className='col-12 d-flex lround3'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 3</p></div> 
          <div className='container d-flex text-center justify-content-center flex-wrap'>
 
@@ -88,7 +88,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
         <div className='round-spacer'></div> 
       </div>
 
-      <div className='col-12 d-flex justify-content-center text-center lround2'>
+      <div className='col-12 d-flex lround2'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 2</p></div> 
          <div className='container d-flex text-center justify-content-center flex-wrap'>
 
@@ -140,7 +140,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
         <div className='round-spacer'></div> 
       </div>
 
-      <div className='col-md-12 d-flex justify-content-center round1'>
+      <div className='col-md-12 d-flex round1'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 1</p></div> 
       <div className='container d-flex flex-wrap'>
         <div className='col-md-3'></div> 

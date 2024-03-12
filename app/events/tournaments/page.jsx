@@ -18,7 +18,7 @@ export default function Tournaments() {
 
                 <div className="col-6 tournaments-event text-center">
                 <Link href='./tournaments/OpeningTournament'>
-                        <img src='/Img/Test Event.png' alt='Tournament Image' />
+                        <img src='/Img/Events/OpeningTournament/openingevent.png' alt='Tournament Image' />
                         <h5>Opening Tournament</h5>
                         <p>asdasdsadasdasdasdasd asdasdasda sd asdad</p>
                     </Link>
