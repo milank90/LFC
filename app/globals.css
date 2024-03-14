@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Sports_Bar';
+    src: url('/Fonts/Sports Bar.otf') format('opentype');
+    /* Add more src declarations for other font formats if needed */
+  }
+ 
+@font-face {
+    font-family: 'Danger';
+    src: url('/Fonts/Gimme Danger.ttf') format('truetype');
+    /* Add more src declarations for other font formats if needed */
+}  

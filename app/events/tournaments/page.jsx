@@ -20,7 +20,10 @@ export default function Tournaments() {
                 <Link href='./tournaments/OpeningTournament'>
                         <img src='/Img/Events/OpeningTournament/openingevent.png' alt='Tournament Image' />
                         <h5>Opening Tournament</h5>
-                        <p>asdasdsadasdasdasdasd asdasdasda sd asdad</p>
+                        <p>Prepare yourselves for the most epic showdown of Lalafell combatants ever witnessed –
+                           the inaugural Lalafell Fight Club Opening Tournament! Brace yourselves as the 
+                           fiercest warriors from across the realm converge upon our arena for a double elimination 
+                           battle royale like no other.</p>
                     </Link>
 
                 </div>

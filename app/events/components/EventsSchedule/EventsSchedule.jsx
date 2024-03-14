@@ -160,7 +160,7 @@ const EventsSchedule = () => {
   }, [eventsData]);
 
   return (
-    <div className="event-schedule-area-two bg-color pad100" style={{ marginTop: '200px' }}>
+    <div className="event-schedule-area-two bg-color pad100 d-flex justify-content-center" style={{ marginTop: '200px' }}>
       <div className="container" style={{ textAlign: 'center' }}>
         <div className="row">
           <div className="col-10 mx-auto">

@@ -76,7 +76,7 @@ const TournamentPage = () => {
 
   return (
     <div className='tournament d-flex justify-content-center flex-wrap' style={{ marginTop: '150px' }}>
-      <h1 className="col-12 Header text-center mb-4">{tournamentData.name}</h1>
+      <h1 className="col-12 Header text-center mb-4">BRACKETS</h1>
       <div className="col-12 bracket-tabs d-flex justify-content-center">
       {brackets
   .sort() // Sort the brackets alphabetically
