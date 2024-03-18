@@ -28,9 +28,9 @@ const TournamentWBracket = ({ participants, tournamentData }) => {
     <div className="col-12 d-flex justify-content-center flex-wrap">
         <div className='col-12 d-flex round1'>
          <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>Round 1</p></div> 
-         <div className='container d-flex flex-wrap'>
+         <div className='container-round d-flex flex-wrap'>
         {[0, 2, 4, 6].map((position, index) => (
-          <div key={index} className='col-md-3 col-12 d-flex flex-wrap text-center round1-match'>
+          <div key={index} className='col-md-3 col-12 d-flex flex-wrap justify-content-center text-center round1-match'>
             <div className='col-5 fighter'>
               <Link href={`/fighters/${(getParticipantInfo(getFighterIdAtPosition(tournamentData.round1fighters, position)).name || '').replace(/\s/g, '.')}`}>
                 <img src={getParticipantInfo(getFighterIdAtPosition(tournamentData.round1fighters, position)).img1 || '/Img/Fighters/Blank/Blank1.png'} alt="Fighter Image" />
@@ -60,7 +60,7 @@ const TournamentWBracket = ({ participants, tournamentData }) => {
 
       <div className='col-12 d-flex round2'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>Round 2</p></div> 
-         <div className='container d-flex flex-wrap'>
+         <div className='container-round d-flex flex-wrap'>
         {[0, 2].map((position, index) => (
           <div key={index} className='col-md-6 col-12 justify-content-center d-flex text-center flex-wrap round2-match'>
             <div className='col-md-3 col-5 fighter'>
@@ -92,7 +92,7 @@ const TournamentWBracket = ({ participants, tournamentData }) => {
 
       <div className='col-12 d-flex round3'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>Round 3</p></div> 
-         <div className='container d-flex justify-content-center'>
+         <div className='container-round d-flex justify-content-center'>
         {[0].map((position, index) => (
           <div key={index} className='col-lg-12 col-md-10 col-12 d-flex justify-content-center text-center flex-wrap round3-match'>
             <div className='col-md-2 col-5 fighter'>

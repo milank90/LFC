@@ -29,7 +29,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
       {/* Round 4 */}
       <div className='col-md-12 d-flex text-center lround4'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 4</p></div> 
-      <div className='container d-flex'>
+      <div className='container-round d-flex flex-wrap justify-content-center'>
         
         <div className='col-md-2'></div> 
       
@@ -52,6 +52,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
             </Link>
           </div>
         </div>
+        <div className='col-md-5'></div> 
         </div>
         <div className='round-spacer'></div> 
       </div>
@@ -59,7 +60,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
       {/* Round 3 */}
       <div className='col-12 d-flex lround3'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 3</p></div> 
-         <div className='container d-flex text-center justify-content-center flex-wrap'>
+         <div className='container-round d-flex text-center justify-content-center flex-wrap'>
 
         <div className='col-md-8 col-12 d-flex text-center justify-content-center flex-wrap round3-match'>
           <div className='col-md-12 d-flex text-center flex-wrap d-none d-md-block'>
@@ -90,7 +91,7 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
 
       <div className='col-12 d-flex lround2'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 2</p></div> 
-         <div className='container d-flex text-center justify-content-center flex-wrap'>
+         <div className='container-round d-flex text-center justify-content-center flex-wrap'>
 
         <div className='col-md-3 col-12 d-flex text-center justify-content-center flex-wrap round2-match'>
           <div className='col-md-12 d-flex text-center flex-wrap d-none d-md-block'>
@@ -140,9 +141,9 @@ const TournamentLBracket = ({ participants, tournamentData }) => {
         <div className='round-spacer'></div> 
       </div>
 
-      <div className='col-md-12 d-flex round1'>
+      <div className='col-md-12 d-flex lround1'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>L-Round 1</p></div> 
-      <div className='container d-flex flex-wrap'>
+      <div className='container-round d-flex flex-wrap'>
         <div className='col-md-3'></div> 
          
         <div className='col-md-3 col-12 d-flex text-center justify-content-center flex-wrap round1-match'>

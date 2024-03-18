@@ -102,13 +102,14 @@
   margin-right: 20%;
   margin-top: 0px;
   padding-top: 0px;
-  width:60.6%
+  width:60.4%
 }
 
 .f_fight-border {
   min-height: 30px;
   border-left: 3px solid #000;
   border-top: 3px solid #000;
+  margin-left: -1.5px;
 
   margin-top: 0px;
   padding-top: 0px;
@@ -137,7 +138,7 @@
   margin-right: 20%;
   margin-top: 0px;
   padding-top: 0px;
-  width:60.6%
+  width:60.4%
 }
 
 
@@ -146,6 +147,7 @@
 
   min-height: 30px;
   border-right: 3px solid #000;
+  margin-left: -1.5px;
   margin-top: 0px;
   padding-top: 0px;
 
@@ -157,7 +159,7 @@
   display: flex;
   align-items: center;
   min-height: 135px;
-  max-width: 135px;
+  max-width: 7vw;
 }
 
 /*.fighter a {
@@ -204,10 +206,19 @@ margin-bottom: 0px;
   }
 
 
+    
+
+.lround1 .vs,
+.lround2 .vs {
+
+    width: 19% ;
+    
+   }
+  
 
   .lround3 .vs {
 
-   width: 44% ;
+   width: 45% ;
    
   }
 
@@ -215,10 +226,11 @@ margin-bottom: 0px;
 
   .lround4 .vs {
 
-    width:35%;
+    width:36%;
   }
 
   .finals .vs{
+    padding-top: 3%;
     padding-right: 10px;
   }
 
@@ -237,6 +249,7 @@ margin-bottom: 0px;
   @media only screen and (max-width: 768px) {
     .round2 .vs,
     .round3 .vs, 
+    .lround1 .vs,
     .lround2 .vs,
     .lround3 .vs,
     .lround4 .vs,
@@ -244,6 +257,11 @@ margin-bottom: 0px;
     
     width:13%;
     }
+
+    .fighter {
+      max-width: 29vw;
+    }
+    
   }      
 
 
@@ -257,7 +275,9 @@ width:15%;
 width: 15%;
 
 }
-
+.container-round {
+  width:70%;
+}
 .round-spacer p {
 
   margin-bottom: 0%;

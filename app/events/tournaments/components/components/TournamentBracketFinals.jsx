@@ -28,7 +28,7 @@ const TournamentBracketFinals = ({ participants, tournamentData }) => {
     <div className="col-12">
       <div className='col-md-12 d-flex finals'>
       <div className='round-spacer d-flex align-items-center'><p className='vertical-text'>Finals</p></div>
-      <div className='container d-flex flex-wrap finals justify-content-center justify-content-md-start'>
+      <div className='container-round d-flex flex-wrap finals justify-content-center justify-content-md-start'>
         <div className='col-md-4'></div>
         <div className='col-md-4 col-12 d-flex text-center justify-content-center flex-wrap finals-match'>
          

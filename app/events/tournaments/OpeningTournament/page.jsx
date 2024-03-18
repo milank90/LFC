@@ -5,7 +5,7 @@ export default function OpeningTournament() {
     return (
       <main>
         <div className="tournament-container d-flex flex-wrap justify-content-center">
-            <div className="col-12 d-flex justify-content-center cover-image text-center">
+            <div className="col-12 d-flex justify-content-center tournament-image text-center">
               <div className="container text-center tournament-title">
                 <h1>Opening Tournament</h1>
                 <div className="tournament-info">
@@ -26,10 +26,10 @@ export default function OpeningTournament() {
                 </div>  
               </div>
             </div>  
-            <div className="col-md-6 col-12 p-4">
-                <img src='/Img/Events/OpeningTournament/openingevent.png' alt='Tournament Image'></img>
+            <div className="col-md-6 col-12 image1">
+                <img src='/Img/tournaments/OpeningTournament/afromountain1.png' alt='Tournament Image'></img>
             </div>
-            <div className="col-md-6 col-12 p-4">
+            <div className="col-md-6 col-12 details2">
                 <p>Prepare yourselves for the most epic showdown of Lalafell combatants ever witnessed –
                    the inaugural Lalafell Fight Club Opening Tournament! Brace yourselves as the 
                    fiercest warriors from across the realm converge upon our arena for a double elimination 

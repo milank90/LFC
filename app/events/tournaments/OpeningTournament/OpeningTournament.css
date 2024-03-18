@@ -8,9 +8,9 @@
     width: 100%;
 }
 
-.cover-image {
+.tournament-image {
     min-height: 1800px;
-    color: white;
+    color: #ffff;
     background: url('/Img/tournaments/OpeningTournament/OpeningTournament.png') no-repeat center;
     background-size: cover;
   }
@@ -96,6 +96,21 @@
     font-weight: 500;
     
 }
+
+
+.image1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.details2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 15%;
+    font-size: x-large;
+}
+
 .border-c {
     width: 100%;
     min-height: 200px;

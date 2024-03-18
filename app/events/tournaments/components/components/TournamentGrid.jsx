@@ -12,7 +12,7 @@ const TournamentGrid = ({ selectedBracket, participants, tournamentData }) => {
       <div className='col-12 order-lg-1 order-1'>
         <TournamentWBracket participants={participants} tournamentData={tournamentData} />
       </div>
-      <div className='col-12 order-lg-2 order-3'>
+      <div className='col-12 order-md-2 order-3'>
         <TournamentBracketFinals participants={participants} tournamentData={tournamentData} />
       </div>
       <div className='col-12 order-lg-3 order-2'>
