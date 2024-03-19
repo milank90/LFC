@@ -165,12 +165,12 @@
   /* Styles for small devices (phones) */
   .navbar {
     background-color: #046dd6; /* Dark background color */
-    padding: 10px; /* Adjust padding as needed */
+    padding-left: 2%; /* Adjust padding as needed */
+    padding-right: 2%;
   }
 }
 
 .navbar-nav .nav-item {
-  margin-top: 1%;
   font-weight: bold;
   font-size: 0.9rem;
   
@@ -187,6 +187,7 @@
 
 /* Extend hover area without affecting navbar size */
 .navbar-nav .nav-item {
+  height:100%;
   padding: 2%; /* Adjust the padding to expand the hover area */
 }
 

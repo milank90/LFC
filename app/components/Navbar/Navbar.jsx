@@ -57,7 +57,7 @@ export default function Navbar() {
         >
           <div className="col-12">
             <div className="row flex-grow-1 p-4 p-lg-0">
-              <div className="col-2 d-flex d-lg-block  order-1 order-lg-2 text-lg-center">
+              <div className="col-2 d-flex justify-content-center align-items-center  order-1 order-lg-2 text-lg-center">
                 <button
                   type="button"
                   className="d-lg-none border-0 bg-transparent p-0 ms-auto"
@@ -67,7 +67,7 @@ export default function Navbar() {
                   <i className="fa-solid fa-close"></i>
                 </button>
                 <Link style={{ textDecoration: "none" }} href="/">
-                  <div className="navbar-brand d-none d-lg-block py-0 me-0">
+                  <div className="navbar-brand d-none d-lg-flex justify-content-center ms-4">
                     <span className={`fw-bold cfont ${router === "/" ? 'underline' : ''}`}>LFC</span>
                   </div>
                 </Link>
