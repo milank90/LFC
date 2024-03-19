@@ -3,10 +3,7 @@
     background-color: #d4bd4b;
 }
 
-.tournament-container img {
 
-    width: 100%;
-}
 
 .tournament-image {
     min-height: 1800px;
@@ -79,6 +76,11 @@
         font-size: x-large;
         
     }
+}
+
+.tournament-container img {
+
+    width: 100%;
 }
 
 .tournament-info {

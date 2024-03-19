@@ -56,7 +56,7 @@ export default function Navbar() {
           aria-labelledby="navbarOffcanvasLgLabel"
         >
           <div className="col-12">
-            <div className="row flex-grow-1 p-4 p-lg-0">
+            <div className="row flex-grow-1 p-0 p-lg-0">
               <div className="col-2 d-flex justify-content-center align-items-center  order-1 order-lg-2 text-lg-center">
                 <button
                   type="button"
@@ -74,7 +74,7 @@ export default function Navbar() {
               </div>
 
               <div className="col-5 order-2 order-lg-1 ms-auto ms-lg-0">
-                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-start left">
+                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-start align-items-center left">
                 {menuButtonsL.map((button) => (
   <li className="nav-item" key={button.title}>
     <Link className={`nav-link ${router === "/" + button.title ? 'underline' : ''}`} href={`/${button.title}`}>{button.title}</Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
               </div>
 
               <div className="col-5 order-3">
-                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end right">
+                <ul className="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end align-items-center right">
                   {menuButtonsR.map((button) => (
                     <li className="nav-item" key={button.title}>
                       <Link className={`nav-link ${router === "/" + button.title ? 'underline' : ''}`} href={`/${button.title}`}>{button.title}</Link>
