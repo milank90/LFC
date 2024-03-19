@@ -50,7 +50,7 @@ export default function Navbar() {
         </Link>
 
         <div
-          className="offcanvas offcanvas-end vh-100"
+          className="offcanvas offcanvas-end"
           tabIndex="-1"
           id="navbarOffcanvasLg"
           aria-labelledby="navbarOffcanvasLgLabel"
